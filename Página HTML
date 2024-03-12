@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos e Inscrição</title>
+</head>
+<body>
+    <h1>Cursos Disponíveis</h1>
+    <ul>
+        <li>
+            <h2>Curso 1</h2>
+            <p>Descrição do Curso 1</p>
+            <p>Turno: Manhã</p>
+            <p>Professores: Professor 1, Professor 2</p>
+            <p>Valor: R$100,00</p>
+            <a href="formulario_inscricao.html?curso=1">Inscrever-se</a>
+        </li>
+        <li>
+            <h2>Curso 2</h2>
+            <p>Descrição do Curso 2</p>
+            <p>Turno: Tarde</p>
+            <p>Professores: Professor 3, Professor 4</p>
+            <p>Valor: R$120,00</p>
+            <a href="formulario_inscricao.html?curso=2">Inscrever-se</a>
+        </li>
+        <!-- Adicione mais cursos conforme necessário -->
+    </ul>
+</body>
+</html>
