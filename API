@@ -4,7 +4,7 @@
         let formData = new FormData(this);
         let jsonData = JSON.stringify(Object.fromEntries(formData.entries()));
 
-        fetch('URL_DA_API', {
+        fetch('https://609c32a01973d20017b7d7d2.mockapi.io/api/alunos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
