@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form id="form-inscricao">
+        <!-- Dados do Aluno -->
+        <h2>Dados do Aluno</h2>
+        <label for="nome-aluno">Nome*</label>
+        <input type="text" id="nome-aluno" name="nome-aluno" required>
+        <!-- Adicione os outros campos de dados do aluno -->
+        
+        <!-- Dados do Pai -->
+        <h2>Dados do Pai</h2>
+        <label for="nome-pai">Nome*</label>
+        <input type="text" id="nome-pai" name="nome-pai" required>
+        <!-- Adicione os outros campos de dados do pai -->
+
+        <!-- Dados da Mãe -->
+        <h2>Dados do Mãe</h2>
+        <label for="nome-mae">Nome*</label>
+        <input type="text" id="nome-mae" name="nome-mae" required>
+        <!-- Adicione os outros campos de dados da mãe -->
+
+        <!-- Dados do Curso -->
+        <h2>Dados do Curso</h2>
+        <label for="nome-curso">Nome do Curso Escolhido*</label>
+        <input type="text" id="nome-curso" name="nome-curso" required>
+        <!-- Adicione os outros campos de dados do curso -->
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+
+    <script>
+        document.getElementById("form-inscricao").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+            // Converta o formData em JSON
+            let jsonData = JSON.stringify(Object.fromEntries(formData.entries()));
+            console.log(jsonData);
+            /*
+            fetch('URL_DA_API', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: jsonData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Inscrição enviada com sucesso!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Ocorreu um erro ao enviar a inscrição.');
+            });
+            */
+        });
+    </script>
+</body>
+</html>
